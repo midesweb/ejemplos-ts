@@ -3,10 +3,14 @@ let cadena: string = "Hola mundo";
 let numero: number = 123;
 let verdad: boolean = true;
 
+
+//////////////////////////////////////////////////////////////////
 // ARRAYS
 let pares: number[] = [2, 4, 6];
 let dias: string[] = ["lunes", "martes", "miercoles"];
 
+
+//////////////////////////////////////////////////////////////////
 // FUNCIONES
 function sumar(a: number, b: number): number {
   return a + b;
@@ -15,9 +19,12 @@ function saludar(nombre: string): void {
   console.log(`Hola ${nombre}`);
 }
 
+//////////////////////////////////////////////////////////////////
 // NULL
 const n: null = null
 
+
+//////////////////////////////////////////////////////////////////
 // TIPOS DE UNIÓN
 
   // Esto representa un problema
@@ -29,8 +36,8 @@ const n: null = null
   let nombre2: string | null = "Juan";
   nombre2 = null;
 
-type direcciones = 'arriba' | 'abajo' | 'izquierda' | 'derecha';
 
+////////////////////////////////////////////////////////////////// 
 // TYPE ALIASES
 type nombre = string;
 let miNombre: nombre = "Juan";
@@ -38,6 +45,9 @@ let miNombre: nombre = "Juan";
 type estatura = number | null;
 let miEstatura: estatura = 1.78;
 miEstatura = null;
+
+type direcciones = 'arriba' | 'abajo' | 'izquierda' | 'derecha';
+let sentido: direcciones = 'izquierda';
 
 type pelicula = {
   titulo: string;
@@ -50,6 +60,8 @@ let pelicula1: pelicula = {
   anyo: 1989
 }
 
+
+//////////////////////////////////////////////////////////////////
 // ENUM
 enum Color {
   Rojo = "Rojo",
@@ -59,6 +71,8 @@ enum Color {
 let colorFavorito: Color = Color.Verde;
 console.log(colorFavorito);
 
+
+//////////////////////////////////////////////////////////////////
 // CLASES
 class Coche {
   public velocidad: number = 0;
@@ -82,6 +96,8 @@ miCoche.acelerar();
 miCoche.acelerar();
 console.log(miCoche.velocidad);
 
+
+//////////////////////////////////////////////////////////////////
 // INTERFACES
 interface Rectangulo {
   ancho: number; 
